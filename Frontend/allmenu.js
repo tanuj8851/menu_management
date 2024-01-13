@@ -1,4 +1,4 @@
-let url = "http://localhost:3000";
+let url = "https://backend-menu.onrender.com";
 
 const wholeData = async () => {
   const response = await fetch(`${url}/parent-menu/all`);

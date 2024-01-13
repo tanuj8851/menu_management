@@ -1,6 +1,6 @@
 let menuName = document.getElementById("menuName");
 let parentMenu = document.getElementById("parentMenu");
-let url = "http://localhost:3000";
+let url = "https://backend-menu.onrender.com";
 
 let parentData = [];
 
@@ -44,7 +44,7 @@ form.addEventListener("submit", async (e) => {
 });
 
 const fetchParentMenus = async () => {
-  const response = await fetch("http://localhost:3000/parent-menu/all");
+  const response = await fetch(`${url}/parent-menu/all`);
   const data = await response.json();
 
   parentData = data;
