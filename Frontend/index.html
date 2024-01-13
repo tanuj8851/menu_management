@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Management</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="pages">
+        <a href="./allmenu.html">
+            <button>All Menu</button>
+        </a>
+    </div>
+    <div id="container">
+        <h2>Create Menu</h2>
+        <form id="createMenuForm">
+            <div>
+                <label for="menuName">Menu Name:</label>
+                <input type="text" id="menuName" placeholder="Menu Name" required>
+            </div>
+          
+            <div>
+                <label for="parentMenu">Parent Menu:</label>
+                <select id="parentMenu">
+                    <option value="">All Parent Menu</option>
+                    <!-- <option value="parent1">Parent 1</option>
+                    <option value="parent2">Parent 2</option>
+                    <option value="parent3">Parent 3</option> -->
+
+                    
+                </select>
+            </div>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
